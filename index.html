@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#080206">
+    <meta name="description" content="Una rosa que florece entre p�talos y peque�os universos de c�digo.">
+
+    <title> Una rosa para ti</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="vignette"></div>
+
+    <div class="spotlight"></div>
+
+    <div class="ambient-light" id="ambientLight"></div>
+
+
+    <!-- PANTALLA INICIAL -->
+
+    <div class="trigger-overlay" id="triggerOverlay">
+
+        <div class="glass-card">
+
+            <div class="card-glow"></div>
+
+            <div class="rose-icon">🌹</div>
+
+            <h2 class="title">Amor.css</h2>
+
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loadingBar"></div>
+            </div>
+
+            <p class="status-text" id="statusText">
+                Ready to compile...
+            </p>
+
+            <button class="start-button" id="startButton" disabled>
+
+                <span class="btn-text">
+                    Toca para florecer
+                </span>
+
+                <span class="btn-shine"></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ESCENA DE LA ROSA -->
+
+    <div class="scene">
+
+        <div class="rose-wrapper" id="roseWrapper">
+
+            <div class="stem-group">
+
+                <div class="stem" id="stem">
+                    <div class="stem-highlight"></div>
+                </div>
+
+                <div class="thorn thorn-1" id="thorn1"></div>
+
+                <div class="thorn thorn-2" id="thorn2"></div>
+
+                <div class="leaf leaf-left" id="leafLeft">
+                    <div class="leaf-vein"></div>
+                </div>
+
+                <div class="leaf leaf-right" id="leafRight">
+                    <div class="leaf-vein"></div>
+                </div>
+
+            </div>
+
+            <div class="calyx" id="calyx"></div>
+
+            <div class="rose-head" id="roseHead">
+
+                <div class="rose-glow"></div>
+
+                <div class="rose-glow-inner"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MENSAJE DESPU�S DE FLORECER -->
+
+    <div class="end-text" id="endText">
+
+        <p class="tagline" id="tagline">
+            La programe para ti.
+        </p>
+
+        <span class="rose-emoji">🌹</span>
+
+
+        <!-- SOBRE DE LA CARTA -->
+
+        <button
+            class="letter-trigger"
+            id="letterTrigger"
+            type="button"
+            aria-label="Abrir la carta"
+            aria-haspopup="dialog"
+            aria-controls="letterModal">
+
+            <span class="envelope-icon" aria-hidden="true">
+                💌
+            </span>
+
+            <span class="letter-trigger-text">
+                abre la carta
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <!-- P�TALOS QUE CAEN -->
+
+    <div id="fallingPetals"></div>
+
+
+    <!-- CARTA ROM�NTICA -->
+
+    <div
+        class="letter-overlay"
+        id="letterModal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="letterTitle"
+        aria-hidden="true"
+        inert>
+
+        <div class="letter-backdrop" id="letterBackdrop"></div>
+
+        <article class="letter-card">
+
+            <button
+                class="letter-close"
+                id="letterClose"
+                type="button"
+                aria-label="Cerrar la carta">
+
+                &times;
+
+            </button>
+
+            <div class="letter-decoration" aria-hidden="true">
+                <span>🩵</span>
+            </div>
+
+            <p class="letter-eyebrow">
+                Un pequeño detalle para ti
+            </p>
+
+            <h2 class="letter-title" id="letterTitle">
+                Para mi hermosa flor
+            </h2>
+
+            <div class="letter-divider">
+                <span>🌸</span>
+            </div>
+
+            <div class="letter-message">
+
+                <p>
+                    Entre petalos y pequeñas lineas de códigos,
+                    hice florecer esta rosa pensando en ti.
+                </p>
+
+                <p>
+                    Para ti, mi hermosa y delicada flor; mi ojitos
+                    lindos, mi princesa, mi reina.
+                </p>
+
+                <p>
+                    Que este nuevo día te abrace tan bonito como tu
+                    abrazas mi corazón.
+                </p>
+
+                <p class="letter-greeting">
+                    Buenos días, mi amor. 
+                </p>
+
+            </div>
+
+            <div class="letter-signature">
+
+                <span class="signature-line"></span>
+
+                <span>
+                    Con cariño, para ti.
+                </span>
+
+                <span class="signature-heart">
+                    
+                </span>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
